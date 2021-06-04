@@ -1,0 +1,133 @@
+#indexbody{
+    margin:0;
+    background-image: url('https://i.pinimg.com/originals/e7/4b/59/e74b597961bae8f46a69dbad3633174a.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid{
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.img{
+    height: 300px;
+    width: auto;
+}
+
+.center-div {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    /* height:width ratio = 9/16 = .5625  */
+    background: pink;
+    max-height: 100vh;
+    max-width: 177.78vh;
+    /* 16/9 = 1.778 */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* vertical center */
+    left: 0;
+    right: 0;
+    /* horizontal center */
+    background-image: url('https://i.pinimg.com/originals/e7/4b/59/e74b597961bae8f46a69dbad3633174a.gif');
+    background-size: cover;
+}
+
+main {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+.pixelart {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.blancoynegro {
+    filter: grayscale(1);
+}
+
+.character {
+    position: absolute;
+}
+
+.flipped {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -khtml-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+.l-split__item {
+    float: left;
+    width: 46%;
+  }
+  
+  .l-split__item--small {
+    width: 8%;
+  }
+  
+  .l-centered {
+    margin: 0 auto;
+  }
+  
+  .health-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding:10px;
+  }
+  
+  .healthbar {
+    background-color: #f42126;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #cccccc, 0 0 0 2px #e6e6e6, 0 0 0 3px white;
+    height: 4vw;
+    max-height: 5.125rem;
+  }
+  
+  .healthbar__meter {
+    background-color: #fff950;
+    border-radius: 5px;
+    height: 4vw;
+    max-height: 5.125rem;
+  }
+  
+  .healthbar__meter--player-one {
+    float: right;
+  }
+  
+  .healthbar__meter--player-two {
+    float: left;
+  }
+  
+  .timer,
+  .ko {
+      margin-top:10px;
+    color: #fff950;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2.5vw;
+    line-height: 0.5;
+    text-align: center;
+    text-shadow: 0.4vw 0.3vw 0 #f42126;
+    width: 100%;
+  }
+
+  
+  .timer {
+    position: absolute;
+    margin-top:25px;
+    color: #fff;
+    clear: both;
+    display: block;
+    padding-top: 1.4vw;
+    margin-left: -10px;
+  }
