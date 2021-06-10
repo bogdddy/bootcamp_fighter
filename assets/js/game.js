@@ -164,6 +164,14 @@ class Character {
         $('.healthbar__meter--player-'+(this.side == 'left' ? 'one' : 'two')).animate({
             width: (this.health * 100) / 100+'%'
         }, 'slow');
+        if (this.health <= 0) {
+            if (this.side == 'left') {
+                alert('Gana el jugador de la derecha');
+            } else {
+                alert('Gana el jugador de la izquierda');
+            }
+            windows.location.href = '../index.html';
+        }
     }
     
 }
